@@ -31,7 +31,7 @@ Use the technique of bounding definite integrals to find the $\Theta$ category f
 \end{equation}
 Actually, you should use the integral bound technique for one equality, and use trivial analysis for the other.
 \subsection{Answer}
-To begin, we must draw a graph of the function and the integral:\\
+\subsubsection{Step 1: Draw a graph of the summation and Integral}
 \begin{tikzpicture}
 \begin{axis}[
     xtick={0,1,2,3,4,5,6,7,8,9,10},ytick={0,...,10},
@@ -49,17 +49,19 @@ To begin, we must draw a graph of the function and the integral:\\
 \end{axis}
 \end{tikzpicture}
 
+\subsubsection{Step 2: Deduce the Graph's implications}
 Following from the facts that:
 \begin{enumerate}
-\item The integral is the area under the function $log_2(x)$ from $1$ to $n$.
-\item If we chose to view the integral as the summation of all of its length one segments from $1$ to $n$ plus the integral of whatever is left over (if n is not an integer value), the resulting integral's value will be unaffected.
-\item The value of each integral segment is greater than the value of its corresponding series segment because:
-\begin{enumerate}
-  \item the value of the function and the series are equal at integer values
-  \item the value of the function increases between integers and the value of the series does not.
-\end{enumerate}
+  \item The integral is the area under the function $log_2(x)$ from $1$ to $n$.
+  \item If we chose to view the integral as the summation of all of its length one segments from $1$ to $n$ plus the integral of whatever is left over (if n is not an integer value), the resulting integral's value will be unaffected.
+  \item The value of each integral segment is greater than the value of its corresponding series segment because:
+  \begin{enumerate}
+    \item the value of the function and the series are equal at integer values
+    \item the value of the function increases between integers and the value of the series does not.
+  \end{enumerate}
 \end{enumerate}
 $\int_1^n log_2(x)$ is greater than $\sum_{i = 1}^n log_2(i)$ for any $n$ greater than $1$. Thus, to find the upper bound or $O$ of $\sum_{i = 1}^n log_2(i)$ we merely need to find the integral of $\int_1^n log_2(x)$\\\\
+\subsubsection{Step 3: Calculate the Definite integral}
 So now I will calculate $\int_1^n log_2(x)$
 \begin{enumerate}
   \item Recognize that to take the integral of a logarithm, we will have to perform integration by parts. so we must chose $u$ and $dv$ values.
@@ -71,7 +73,24 @@ So now I will calculate $\int_1^n log_2(x)$
     \int_1^n log_2(x) = \Eval{\frac{ln(x)*x}{ln(2)}}{1}{n}- \int_1^n \frac{x}{xln(2)} = \Eval{\frac{ln(x)*x}{ln(2))}}{1}{n} - \int_1^n \frac{1}{ln(2)} = \Eval{\frac{ln(x)*x}{ln(2)} - \frac{x}{ln(2)}}{1}{n} = \\ \Eval{\frac{ln(x)*x-x}{ln(2)}}{1}{n}
   \end{multline}
   \item solve for the definite integral
+  \begin{equation*}
+    \Eval{\frac{ln(x)*x-x}{ln(2)}}{1}{n} = \frac{ln(n)*n-n}{ln(2)} - \left(\frac{ln(1)*1-1}{ln(2)}\right) = \frac{ln(n)*n-n}{ln(2)} + \left(\frac{1}{ln(2)}\right) = \frac{ln(n)*n-n + 1}{ln(2)}
+  \end{equation*}
 \end{enumerate}
+Thus, The equation:
+\begin{equation*}
+  \frac{ln(n)*n-n + 1}{ln(2)}
+\end{equation*}
+Acts as an upper bound for the summation.
+\subsubsection{Step 4: Prove Upper Bound is in $\Theta(n log(n))$}
+\begin{enumerate}
+  \item prove equation is $O(n log(n))$.
+  According to our notes, an equation of the category $O(n)$ when it
+  \begin{equation}
+  \end{equation}
+  \item
+\end{enumerate}
+
 \begin{tikzpicture}
 \begin{axis}[
     xtick={0,1,2,3,4,5,6,7,8,9,10},ytick={0,...,10},
