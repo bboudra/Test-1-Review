@@ -1,26 +1,28 @@
 \select@language {english}
-\contentsline {section}{\numberline {1}EX 1}{1}
-\contentsline {subsection}{\numberline {1.1}Prompt}{1}
-\contentsline {subsection}{\numberline {1.2}Answer}{1}
-\contentsline {section}{\numberline {2}EX 2}{1}
-\contentsline {subsection}{\numberline {2.1}Prompt}{1}
-\contentsline {subsection}{\numberline {2.2}Answer}{1}
-\contentsline {section}{\numberline {3}EX 3}{1}
-\contentsline {subsection}{\numberline {3.1}Prompt}{1}
+\contentsline {section}{\numberline {1}EX 1}{2}
+\contentsline {subsection}{\numberline {1.1}Prompt}{2}
+\contentsline {subsection}{\numberline {1.2}Answer}{2}
+\contentsline {section}{\numberline {2}EX 2}{2}
+\contentsline {subsection}{\numberline {2.1}Prompt}{2}
+\contentsline {subsection}{\numberline {2.2}Answer}{2}
+\contentsline {section}{\numberline {3}EX 3}{2}
+\contentsline {subsection}{\numberline {3.1}Prompt}{2}
 \contentsline {subsection}{\numberline {3.2}Answer}{2}
 \contentsline {subsubsection}{\numberline {3.2.1}Step 1: Draw a graph of the summation and Integral}{2}
 \contentsline {subsubsection}{\numberline {3.2.2}Step 2: Deduce the Graph's implications}{2}
-\contentsline {subsubsection}{\numberline {3.2.3}Step 3: Calculate the Definite integral}{2}
+\contentsline {subsubsection}{\numberline {3.2.3}Step 3: Calculate the Definite integral}{3}
 \contentsline {subsubsection}{\numberline {3.2.4}Step 4: Prove Upper Bound is in $\Theta (n log(n))$}{3}
-\contentsline {section}{\numberline {4}EX 4}{3}
-\contentsline {subsection}{\numberline {4.1}Prompt}{3}
-\contentsline {subsection}{\numberline {4.2}Answer}{3}
-\contentsline {section}{\numberline {5}EX 5}{3}
-\contentsline {subsection}{\numberline {5.1}Prompt}{3}
-\contentsline {subsection}{\numberline {5.2}Answer}{3}
-\contentsline {section}{\numberline {6}EX 6}{3}
-\contentsline {subsection}{\numberline {6.1}Prompt}{3}
-\contentsline {subsection}{\numberline {6.2}Answer}{3}
-\contentsline {section}{\numberline {7}EX 7}{3}
-\contentsline {subsection}{\numberline {7.1}Prompt}{3}
-\contentsline {subsection}{\numberline {7.2}Answer}{3}
+\contentsline {subsubsection}{\numberline {3.2.5}Step 5: Find Lower Bound}{4}
+\contentsline {subsubsection}{\numberline {3.2.6}Find Integral of $log_2(x-1)$}{4}
+\contentsline {section}{\numberline {4}EX 4}{5}
+\contentsline {subsection}{\numberline {4.1}Prompt}{5}
+\contentsline {subsection}{\numberline {4.2}Answer}{5}
+\contentsline {section}{\numberline {5}EX 5}{5}
+\contentsline {subsection}{\numberline {5.1}Prompt}{5}
+\contentsline {subsection}{\numberline {5.2}Answer}{5}
+\contentsline {section}{\numberline {6}EX 6}{5}
+\contentsline {subsection}{\numberline {6.1}Prompt}{5}
+\contentsline {subsection}{\numberline {6.2}Answer}{5}
+\contentsline {section}{\numberline {7}EX 7}{5}
+\contentsline {subsection}{\numberline {7.1}Prompt}{5}
+\contentsline {subsection}{\numberline {7.2}Answer}{5}
