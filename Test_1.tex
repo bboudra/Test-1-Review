@@ -170,10 +170,31 @@ For simplicity:
 \end{equation*}
 
 \begin{enumerate}
-  \item Choose u and dv
+  \item Choose t, u, and dv
   \begin{equation}
-    u = \frac{ln(x-1)}{ln(2)} \qquad du = ln
+    t = x-1 \qquad u = ln(t) \qquad du = \frac{1}{t}*dt \qquad dv = 1 \qquad v = t
   \end{equation}
+
+  \begin{equation*}
+    \int_1^n log_2(x) = \Eval{\frac{ln(t)*t}{ln(2)}}{1}{n} - \frac{1}{ln(2)}\int_1^n \frac{1}{t}*t * dt
+  \end{equation*}
+
+  \begin{equation*}
+    \int_1^n log_2(x) = \Eval{\frac{ln(t)*t}{ln(2)}}{1}{n} - \frac{1}{ln(2)}\int_1^n 1*dt
+  \end{equation*}
+
+  \begin{equation*}
+    \int_1^n log_2(x) = \Eval{\frac{ln(t)*t}{ln(2)} - \frac{t}{ln(2)}}{1}{n}
+  \end{equation*}
+
+  \begin{equation*}
+    \int_1^n log_2(x) = \Eval{\frac{ln(t)*t-t}{ln(2)}}{1}{n}
+  \end{equation*}
+
+  \begin{equation*}
+    \int_1^n log_2(x) = \Eval{\frac{(x-1)*(ln(x-1)-1)}{ln(2)}}{1}{n}
+  \end{equation*}
+
 \end{enumerate}
 \begin{tikzpicture}
 \begin{axis}[
